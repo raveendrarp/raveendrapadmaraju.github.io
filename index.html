@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -306,6 +307,28 @@
   .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
   .reveal.d4{transition-delay:.4s}.reveal.d5{transition-delay:.5s}
 
+  /* ---------- SECTION CONTRAST / ANCHOR OFFSET ---------- */
+  #about,#competencies,#skills,#experience,#projects,#education,#contact{
+    scroll-margin-top:92px;
+  }
+
+  /* Keep the two portfolio areas visually distinct. */
+  .case-studies-section{
+    background:
+      radial-gradient(900px 420px at 10% 0%, rgba(47,143,138,.08), transparent 60%),
+      linear-gradient(180deg,#fbfaf7 0%,#f1eee7 100%);
+  }
+  .case-studies-section .proj-card{
+    box-shadow:0 20px 55px -28px rgba(14,27,44,.65);
+  }
+  .education-section{
+    background:
+      radial-gradient(900px 420px at 90% 0%, rgba(200,163,91,.12), transparent 60%),
+      linear-gradient(180deg,#ece5d9 0%,#e3dbcd 100%);
+    border-top:1px solid rgba(200,163,91,.16);
+    border-bottom:1px solid rgba(200,163,91,.16);
+  }
+
   /* ---------- RESPONSIVE ---------- */
   @media(max-width:900px){
     .hero-grid,.about-grid{grid-template-columns:1fr;gap:48px}
@@ -313,21 +336,108 @@
     .stats-grid{grid-template-columns:repeat(2,1fr);gap:40px 20px}
     .stat::after{display:none}
     .comp-grid,.skills-grid,.proj-grid,.edu-grid,.bars{grid-template-columns:1fr}
+
+    /* Mobile navigation: hidden when closed, fully visible when open, and
+       always closes after a selection. */
     .nav-links{
-      position:fixed;inset:0 0 0 auto;width:min(78vw,320px);background:var(--navy);
-      flex-direction:column;justify-content:center;gap:32px;transform:translateX(100%);transition:.4s;padding:40px;
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(82vw,340px);
+      background:var(--navy);
+      flex-direction:column;
+      justify-content:center;
+      gap:26px;
+      transform:translate3d(100%,0,0);
+      visibility:hidden;
+      opacity:0;
+      pointer-events:none;
+      transition:transform .35s ease,opacity .25s ease,visibility 0s linear .35s;
+      padding:72px 34px 40px;
+      box-shadow:-20px 0 60px -35px rgba(0,0,0,.65);
+      z-index:65;
     }
-    .nav-links.open{transform:none}
-    .nav-links a{color:var(--ivory);font-size:1.05rem}
-    .nav-toggle{display:flex;z-index:70}
-    nav .nav-cta{display:none}
+    .nav-links.open{
+      transform:translate3d(0,0,0);
+      visibility:visible;
+      opacity:1;
+      pointer-events:auto;
+      transition:transform .35s ease,opacity .25s ease;
+    }
+    .nav-links a{
+      color:var(--ivory);
+      font-size:1rem;
+      width:100%;
+      text-align:left;
+      padding:5px 0;
+    }
+    .nav-links a::after{background:var(--gold-soft)}
+    .nav-toggle{
+      display:flex;
+      z-index:70;
+      position:relative;
+      padding:8px 4px;
+    }
+    nav .nav-cta{display:block!important;background:var(--gold);color:var(--navy)!important}
+    nav.scrolled .nav-toggle span{background:var(--navy)}
+    body.menu-open{overflow:hidden}
+
+    /* On mobile the certification badges sit beside the portrait rather
+       than across the face/photo. */
+    .portrait-wrap{
+      width:min(420px,100%);
+      padding-right:0;
+      overflow:visible;
+      margin:0 auto;
+    }
+    .portrait-wrap.reveal{
+      transform:none;
+    }
+    .portrait-frame{
+      width:calc(100% - 18px);
+      margin-left:0;
+    }
+    .fb-2{
+      top:76px;
+      right:-8px;
+      max-width:58%;
+    }
+    .fb-4{
+      bottom:18px;
+      right:-8px;
+      max-width:58%;
+    }
   }
+
+  @media(min-width:901px){
+    /* Certification badges live outside the portrait on the right. */
+    .fb-2{right:-105px;top:74px}
+    .fb-4{right:-105px;bottom:-24px}
+  }
+
   @media(max-width:520px){
     .wrap{padding:0 20px}
     nav{padding:16px 20px}
     .section-pad{padding:74px 0}
-    .float-badge{transform:scale(.85)}
-    .fb-1{left:-14px}.fb-2{right:-10px}.fb-3{left:10px}
+    .float-badge{transform:scale(.78);transform-origin:center}
+    .fb-1{left:-10px}
+    .fb-3{left:4px}
+    .fb-2{right:-18px}
+    .fb-4{right:-18px}
+    .hero{padding-top:82px}
+    .hero-grid{gap:38px}
+    .portrait-wrap{margin-top:10px}
+    .portrait-frame{width:calc(100% - 10px)}
+    .nav-links{width:min(86vw,330px)}
+  }
+
+  @media(max-width:360px){
+    .float-badge{transform:scale(.70)}
+    .fb-2{right:-10px}
+    .fb-4{right:-10px}
+    .fb-1{left:-4px}
+    .fb-3{left:0}
   }
 </style>
 </head>
@@ -342,9 +452,10 @@
     <a href="#skills">Tools</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Case Studies</a>
+    <a href="#education">Education &amp; Certifications</a>
     <a href="#contact" class="nav-cta">Get in touch</a>
   </div>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
@@ -871,7 +982,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section class="section-pad" id="projects">
+<section class="section-pad case-studies-section" id="projects">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Case Studies</span>
@@ -904,7 +1015,7 @@
 </section>
 
 <!-- EDUCATION & CERT -->
-<section class="section-pad alt">
+<section class="section-pad education-section" id="education">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Foundation</span>
@@ -970,11 +1081,59 @@
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40));
 
-  // mobile menu
+  // Mobile navigation + reliable same-page anchor scrolling
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => links.classList.toggle('open'));
-  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  const navEl = document.getElementById('nav');
+
+  function closeMenu(){
+    links.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded','false');
+  }
+
+  function openMenu(){
+    links.classList.add('open');
+    document.body.classList.add('menu-open');
+    toggle.setAttribute('aria-expanded','true');
+  }
+
+  toggle.setAttribute('aria-expanded','false');
+  toggle.addEventListener('click', () => {
+    links.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  // Intercept all internal section links so fixed navigation never causes
+  // an incorrect landing position on desktop or mobile.
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', event => {
+      const id = anchor.getAttribute('href');
+      if(!id || id === '#') return;
+      const target = document.querySelector(id);
+      if(!target) return;
+
+      event.preventDefault();
+      closeMenu();
+
+      const top = id === '#top'
+        ? 0
+        : Math.max(0, target.getBoundingClientRect().top + window.scrollY - navEl.offsetHeight - 12);
+
+      window.scrollTo({top, behavior:'smooth'});
+      history.replaceState(null, '', id);
+    });
+  });
+
+  // Close the mobile menu with Escape.
+  document.addEventListener('keydown', event => {
+    if(event.key === 'Escape') closeMenu();
+  });
+
+  // Close it if the user taps outside the menu.
+  document.addEventListener('click', event => {
+    if(!links.classList.contains('open')) return;
+    if(!links.contains(event.target) && !toggle.contains(event.target)) closeMenu();
+  });
 
   // count-up animation
   function countUp(el){
