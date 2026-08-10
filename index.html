@@ -61,6 +61,34 @@
   .section-pad{padding:108px 0}
   .lead{color:var(--slate);font-size:1.05rem;max-width:640px}
 
+  .gi-ico {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  color: #2563eb;
+}
+
+.gi-ico svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+  .comp-ico {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: #2563eb;
+}
+
+.comp-ico svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
   /* ---------- NAV ---------- */
   nav{
     position:fixed;top:0;left:0;right:0;z-index:60;
@@ -547,42 +575,170 @@
       <p>Multi-team Agile delivery for cloud, platform, and enterprise applications — managing dependencies, capacity, risks, and release readiness across 6+ teams and 3 industry verticals.</p>
     </div>
     <div class="comp-grid">
-      <div class="comp-card reveal">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 3-4 3 2 4-6"/></svg></div>
-        <h3>Agile Delivery &amp; Engineering Execution</h3>
-        <p>Leading 6+ Scrum and Kanban teams through PI planning, sprint execution, and release coordination — improving time to market by 25%.</p>
-      </div>
-      <div class="comp-card reveal d1">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.2-8.5"/><path d="M21 3v6h-6"/></svg></div>
-        <h3>Product–Engineering Alignment</h3>
-        <p>Aligning Product, Engineering, Architecture, QA, and Platform teams on shared priorities — reducing planning conflicts by 20% through structured cross-team dependency mapping.</p>
-      </div>
-      <div class="comp-card reveal d2">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/></svg></div>
-        <h3>Dependency, Risk &amp; Impediment Management</h3>
-        <p>Identifying cross-team dependencies and risks early through dependency mapping and risk registers — resolving blockers within sprint cycles across 6+ teams.</p>
-      </div>
-      <div class="comp-card reveal">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 6.1H3M21 12.1H3M15.1 18H3"/></svg></div>
-        <h3>Capacity Planning &amp; Delivery Forecasting</h3>
-        <p>Using capacity analysis, velocity trends, and throughput metrics in Jira and Azure DevOps to set realistic sprint commitments and PI forecasts across 6+ teams.</p>
-      </div>
-      <div class="comp-card reveal d1">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
-        <h3>Release Readiness &amp; Delivery Governance</h3>
-        <p>Coordinating Engineering, QA, Platform, Security, and Operations for release readiness — reducing production defects by 25% through earlier testing and strengthened Definition of Done.</p>
-      </div>
-      <div class="comp-card reveal d1">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 20v-6M6 20V10M18 20V4"/></svg></div>
-        <h3>Agile Metrics &amp; Flow Management</h3>
-        <p>Building and tracking velocity, cycle time, throughput, and sprint health dashboards to identify delivery risks early — enabling proactive intervention before commitments slip.</p>
-      </div>
-      <div class="comp-card reveal d2">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 12a9 9 0 0 0-9-9 9 9 0 0 0-6.4 2.6L3 8"/><path d="M3 3v5h5M3 12a9 9 0 0 0 9 9 9 9 0 0 0 6.4-2.6L21 16"/><path d="M21 21v-5h-5"/></svg></div>
-        <h3>Agile Governance &amp; Scaled Delivery</h3>
-        <p>Applying Scrum, Kanban, and SAFe 6.0 across 6+ enterprise teams — facilitating PI Planning, Scrum of Scrums, System Demos, and Inspect &amp; Adapt workshops for consistent delivery governance.</p>
-      </div>
+
+  <!-- Agile Delivery & Engineering Execution -->
+  <div class="comp-card reveal">
+    <div class="comp-ico">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="M3 3v18h18"/>
+        <path d="m7 14 3-4 3 2 4-6"/>
+        <circle cx="7" cy="14" r="1"/>
+        <circle cx="10" cy="10" r="1"/>
+        <circle cx="13" cy="12" r="1"/>
+        <circle cx="17" cy="6" r="1"/>
+      </svg>
     </div>
+
+    <h3>Agile Delivery &amp; Engineering Execution</h3>
+    <p>
+      Leading 6+ Scrum and Kanban teams through PI planning, sprint execution,
+      and release coordination — improving time to market by 25%.
+    </p>
+  </div>
+
+  <!-- Product–Engineering Alignment -->
+  <div class="comp-card reveal d1">
+    <div class="comp-ico">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <circle cx="8" cy="8" r="3"/>
+        <circle cx="16" cy="8" r="3"/>
+        <circle cx="12" cy="16" r="3"/>
+        <path d="M10.5 9.5 12 13"/>
+        <path d="M13.5 9.5 12 13"/>
+        <path d="M11 8h2"/>
+      </svg>
+    </div>
+
+    <h3>Product–Engineering Alignment</h3>
+    <p>
+      Aligning Product, Engineering, Architecture, QA, and Platform teams on
+      shared priorities — reducing planning conflicts by 20% through structured
+      cross-team dependency mapping.
+    </p>
+  </div>
+
+  <!-- Dependency, Risk & Impediment Management -->
+  <div class="comp-card reveal d2">
+    <div class="comp-ico">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 8v5"/>
+        <path d="M12 16h.01"/>
+        <path d="m4.9 4.9 3.2 3.2"/>
+        <path d="m15.9 15.9 3.2 3.2"/>
+      </svg>
+    </div>
+
+    <h3>Dependency, Risk &amp; Impediment Management</h3>
+    <p>
+      Identifying cross-team dependencies and risks early through dependency
+      mapping and risk registers — resolving blockers within sprint cycles
+      across 6+ teams.
+    </p>
+  </div>
+
+  <!-- Capacity Planning & Delivery Forecasting -->
+  <div class="comp-card reveal">
+    <div class="comp-ico">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="M4 19V5"/>
+        <path d="M4 19h17"/>
+        <path d="M7 15h3"/>
+        <path d="M7 11h6"/>
+        <path d="M7 7h10"/>
+        <path d="m15 14 3-3 3 3"/>
+        <path d="M18 11v7"/>
+      </svg>
+    </div>
+
+    <h3>Capacity Planning &amp; Delivery Forecasting</h3>
+    <p>
+      Using capacity analysis, velocity trends, and throughput metrics in Jira
+      and Azure DevOps to set realistic sprint commitments and PI forecasts
+      across 6+ teams.
+    </p>
+  </div>
+
+  <!-- Release Readiness & Delivery Governance -->
+  <div class="comp-card reveal d1">
+    <div class="comp-ico">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+        <path d="m8 12 2.5 2.5L16 9"/>
+      </svg>
+    </div>
+
+    <h3>Release Readiness &amp; Delivery Governance</h3>
+    <p>
+      Coordinating Engineering, QA, Platform, Security, and Operations for
+      release readiness — reducing production defects by 25% through earlier
+      testing and a strengthened Definition of Done.
+    </p>
+  </div>
+
+  <!-- Agile Metrics & Flow Management -->
+  <div class="comp-card reveal d1">
+    <div class="comp-ico">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="M4 19V5"/>
+        <path d="M4 19h17"/>
+        <rect x="7" y="13" width="2.5" height="4" rx=".5"/>
+        <rect x="11" y="10" width="2.5" height="7" rx=".5"/>
+        <rect x="15" y="6" width="2.5" height="11" rx=".5"/>
+        <path d="m18 5 2 2-2 2"/>
+      </svg>
+    </div>
+
+    <h3>Agile Metrics &amp; Flow Management</h3>
+    <p>
+      Building and tracking velocity, cycle time, throughput, and sprint health
+      dashboards to identify delivery risks early — enabling proactive
+      intervention before commitments slip.
+    </p>
+  </div>
+
+  <!-- Agile Governance & Scaled Delivery -->
+  <div class="comp-card reveal d2">
+    <div class="comp-ico">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M8 12h8"/>
+        <path d="m13 8 4 4-4 4"/>
+        <path d="M4.9 4.9 8 8"/>
+        <path d="M16 16l3.1 3.1"/>
+      </svg>
+    </div>
+
+    <h3>Agile Governance &amp; Scaled Delivery</h3>
+    <p>
+      Applying Scrum, Kanban, and SAFe 6.0 across 6+ enterprise teams —
+      facilitating PI Planning, Scrum of Scrums, System Demos, and Inspect &amp;
+      Adapt workshops for consistent delivery governance.
+    </p>
+  </div>
+
+</div>
   </div>
 </section>
 
