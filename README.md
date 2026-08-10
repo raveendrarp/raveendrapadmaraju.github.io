@@ -55,8 +55,8 @@ Open to permanent and contract opportunities across **Finland, the Nordics, and 
 
 - CSM — Scrum Alliance
 - SAFe 6.0 Agilist — Scaled Agile, Inc.
-- Bengaluru University, India
-- SV University, Tirupathi, India
+- Master of Computer Applications (MCA) - Bengaluru University, India
+- BSc — Mathematics & Computer Science - SV University, Tirupathi, India
 
 ## Contact
 
