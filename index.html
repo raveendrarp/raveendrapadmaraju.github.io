@@ -312,7 +312,23 @@
     scroll-margin-top:92px;
   }
 
-  /* Keep the two portfolio areas visually distinct. */
+  /* Strong visual separation between adjacent sections. */
+  .skills-section{
+    background:
+      radial-gradient(900px 420px at 8% 0%, rgba(47,143,138,.08), transparent 60%),
+      linear-gradient(180deg,#ffffff 0%,#f7faf9 100%);
+    border-top:1px solid rgba(47,143,138,.10);
+    border-bottom:1px solid rgba(20,38,60,.08);
+  }
+
+  .experience-section{
+    background:
+      radial-gradient(900px 460px at 92% 0%, rgba(200,163,91,.10), transparent 60%),
+      linear-gradient(180deg,#e9eef3 0%,#dde5ec 100%);
+    border-top:1px solid rgba(14,27,44,.08);
+    border-bottom:1px solid rgba(14,27,44,.08);
+  }
+
   .case-studies-section{
     background:
       radial-gradient(900px 420px at 10% 0%, rgba(47,143,138,.08), transparent 60%),
@@ -321,12 +337,26 @@
   .case-studies-section .proj-card{
     box-shadow:0 20px 55px -28px rgba(14,27,44,.65);
   }
+
+  /* Education and Contact are intentionally at least one viewport tall.
+     This prevents the next section from appearing to overlap when an anchor
+     is selected on desktop or mobile. */
   .education-section{
+    min-height:100svh;
+    display:flex;
+    align-items:center;
     background:
       radial-gradient(900px 420px at 90% 0%, rgba(200,163,91,.12), transparent 60%),
       linear-gradient(180deg,#ece5d9 0%,#e3dbcd 100%);
     border-top:1px solid rgba(200,163,91,.16);
     border-bottom:1px solid rgba(200,163,91,.16);
+  }
+
+  .contact{
+    min-height:100svh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
   /* ---------- RESPONSIVE ---------- */
@@ -337,50 +367,69 @@
     .stat::after{display:none}
     .comp-grid,.skills-grid,.proj-grid,.edu-grid,.bars{grid-template-columns:1fr}
 
-    /* Mobile navigation: hidden when closed, fully visible when open, and
-       always closes after a selection. */
+    /* Mobile navigation: full-screen, reliable on repeated open/close cycles.
+       The menu itself is the backdrop, so it can never become transparent or
+       disappear behind page sections after navigating. */
     .nav-links{
       position:fixed;
-      top:0;
-      right:0;
-      bottom:0;
-      width:min(82vw,340px);
+      inset:0;
+      width:100%;
+      height:100svh;
+      min-height:100vh;
       background:var(--navy);
       flex-direction:column;
       justify-content:center;
-      gap:26px;
-      transform:translate3d(100%,0,0);
+      align-items:flex-start;
+      gap:22px;
+      transform:translate3d(0,-100%,0);
       visibility:hidden;
       opacity:0;
       pointer-events:none;
-      transition:transform .35s ease,opacity .25s ease,visibility 0s linear .35s;
-      padding:72px 34px 40px;
-      box-shadow:-20px 0 60px -35px rgba(0,0,0,.65);
-      z-index:65;
+      transition:transform .32s ease,opacity .22s ease,visibility 0s linear .32s;
+      padding:96px 32px 40px;
+      box-shadow:none;
+      z-index:1;
+      overflow-y:auto;
+      overscroll-behavior:contain;
     }
     .nav-links.open{
       transform:translate3d(0,0,0);
       visibility:visible;
       opacity:1;
       pointer-events:auto;
-      transition:transform .35s ease,opacity .25s ease;
+      transition:transform .32s ease,opacity .22s ease;
     }
     .nav-links a{
       color:var(--ivory);
-      font-size:1rem;
+      font-size:1.05rem;
       width:100%;
       text-align:left;
-      padding:5px 0;
+      padding:7px 0;
+      opacity:1;
     }
     .nav-links a::after{background:var(--gold-soft)}
+    .nav-links .nav-cta{
+      display:inline-flex!important;
+      width:auto;
+      margin-top:8px;
+      background:var(--gold);
+      color:var(--navy)!important;
+      padding:11px 22px;
+    }
     .nav-toggle{
       display:flex;
-      z-index:70;
+      z-index:3;
       position:relative;
       padding:8px 4px;
     }
-    nav .nav-cta{display:block!important;background:var(--gold);color:var(--navy)!important}
-    nav.scrolled .nav-toggle span{background:var(--navy)}
+    nav .nav-cta{display:inline-flex!important}
+    nav.menu-open{
+      background:var(--navy);
+      box-shadow:0 8px 30px -18px rgba(0,0,0,.5);
+    }
+    nav.menu-open .brand{color:var(--ivory)}
+    nav.menu-open .brand span{color:var(--gold-soft)}
+    nav.menu-open .nav-toggle span{background:var(--gold-soft)}
     body.menu-open{overflow:hidden}
 
     /* On mobile the certification badges sit beside the portrait rather
@@ -420,6 +469,8 @@
     .wrap{padding:0 20px}
     nav{padding:16px 20px}
     .section-pad{padding:74px 0}
+    .education-section{min-height:100svh;padding-top:92px;padding-bottom:92px}
+    .contact{min-height:100svh;padding-top:92px;padding-bottom:92px}
     .float-badge{transform:scale(.78);transform-origin:center}
     .fb-1{left:-10px}
     .fb-3{left:4px}
@@ -854,7 +905,7 @@
 </section>
 
 <!-- SKILLS -->
-<section class="section-pad" id="skills">
+<section class="section-pad skills-section" id="skills">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Tools &amp; Frameworks</span>
@@ -912,7 +963,7 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section class="section-pad alt" id="experience">
+<section class="section-pad experience-section" id="experience">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Career Journey</span>
@@ -1089,18 +1140,28 @@
   function closeMenu(){
     links.classList.remove('open');
     document.body.classList.remove('menu-open');
+    navEl.classList.remove('menu-open');
     toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Open navigation menu');
   }
 
   function openMenu(){
     links.classList.add('open');
     document.body.classList.add('menu-open');
+    navEl.classList.add('menu-open');
     toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','Close navigation menu');
   }
 
   toggle.setAttribute('aria-expanded','false');
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', event => {
+    event.stopPropagation();
     links.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  // Never leave the mobile menu in a stale state after orientation/viewport changes.
+  window.addEventListener('resize', () => {
+    if(window.innerWidth > 900) closeMenu();
   });
 
   // Intercept all internal section links so fixed navigation never causes
@@ -1129,10 +1190,9 @@
     if(event.key === 'Escape') closeMenu();
   });
 
-  // Close it if the user taps outside the menu.
-  document.addEventListener('click', event => {
-    if(!links.classList.contains('open')) return;
-    if(!links.contains(event.target) && !toggle.contains(event.target)) closeMenu();
+  // Close it if the user taps the backdrop area outside a menu link.
+  links.addEventListener('click', event => {
+    if(event.target === links) closeMenu();
   });
 
   // count-up animation
