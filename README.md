@@ -60,4 +60,4 @@ Open to permanent and contract opportunities across **Finland, the Nordics, and 
 
 ## Contact
 
-For collaboration or career opportunities, connect with me through [LinkedIn](https://www.linkedin.com/in/raveendra-padmaraju/) or the contact details on my [Visit my portfolio](https://raveendrapadmaraju.github.io) page.
+For collaboration or career opportunities, connect with me through [LinkedIn](https://www.linkedin.com/in/raveendra-padmaraju/) or the contact details on my [portfolio](https://raveendrapadmaraju.github.io) page.
