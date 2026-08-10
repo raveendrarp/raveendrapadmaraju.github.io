@@ -1,10 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Raveendra Padmaraju | Senior Scrum Master | Agile Delivery Lead | SAFe 6.0</title>
-<meta name="description" content="Raveendra Padmaraju — Senior Scrum Master and Agile Delivery Lead with 18+ years of enterprise IT experience and more than eight years in Agile delivery leadership across manufacturing, healthcare, and regulated environments." />
+<title>Raveendra Padmaraju | Senior Agile Delivery Lead | 6+ Teams · SAFe 6.0 · CSM | Espoo, Finland</title>
+<meta name="description" content="Raveendra Padmaraju — Senior Agile Delivery Lead (CSM, SAFe 6.0). 18+ years in enterprise IT, 8+ in Agile delivery across 6+ Scrum/Kanban teams. Manufacturing, healthcare, regulated environments." />
+<meta property="og:title" content="Raveendra Padmaraju | Senior Agile Delivery Lead" />
+<meta property="og:description" content="18+ years in enterprise IT, 8+ in Agile delivery across 6+ Scrum/Kanban teams. CSM, SAFe 6.0. Manufacturing, healthcare, regulated environments." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://YOUR-DOMAIN/assets/preview-card.png" />
+<meta property="og:url" content="https://YOUR-DOMAIN/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Raveendra Padmaraju | Senior Agile Delivery Lead" />
+<meta name="twitter:description" content="18+ years in enterprise IT, 8+ in Agile delivery across 6+ Scrum/Kanban teams. CSM, SAFe 6.0." />
+<meta name="twitter:image" content="https://YOUR-DOMAIN/assets/preview-card.png" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -105,6 +117,10 @@
   .hero-contact a{display:inline-flex;align-items:center;gap:8px;transition:.25s}
   .hero-contact a:hover{color:var(--gold)}
   .hero-contact svg{width:16px;height:16px;stroke:var(--gold)}
+  .hero-results{list-style:none;margin-bottom:30px;display:grid;gap:8px}
+  .hero-results li{font-size:.9rem;color:var(--slate);padding-left:22px;position:relative}
+  .hero-results li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+  .hero-results li strong{color:var(--navy)}
 
   /* portrait */
   .portrait-wrap{position:relative;justify-self:center;width:min(420px,90%)}
@@ -144,6 +160,10 @@
   .about-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:54px;align-items:start}
   .about-grid p{color:var(--slate);margin-bottom:18px}
   .about-grid p strong{color:var(--ink);font-weight:600}
+  .about-results{list-style:none;margin-top:12px;display:grid;gap:8px}
+  .about-results li{font-size:.88rem;color:var(--slate);padding-left:22px;position:relative}
+  .about-results li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:var(--teal);transform:rotate(45deg)}
+  .about-results li strong{color:var(--ink)}
   .glance{
     background:var(--white);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow-sm);
     border:1px solid var(--line);
@@ -222,6 +242,9 @@
   .proj-card p{color:rgba(247,244,238,.78);font-size:.9rem}
   .proj-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
   .proj-chips span{font-size:.72rem;padding:5px 12px;border:1px solid rgba(255,255,255,.18);border-radius:20px;color:var(--gold-soft)}
+  .proj-meta{margin-top:14px;font-size:.78rem;color:rgba(247,244,238,.6);display:flex;gap:16px;flex-wrap:wrap}
+  .proj-meta span{display:inline-flex;align-items:center;gap:6px}
+  .proj-meta strong{color:var(--gold-soft)}
 
   /* ---------- EDU / CERT ---------- */
   .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
@@ -287,10 +310,10 @@
   <a href="#top" class="brand">Raveendra <span>Padmaraju</span></a>
   <div class="nav-links" id="navLinks">
     <a href="#about">About</a>
+    <a href="#competencies">Competencies</a>
     <a href="#experience">Experience</a>
-    <a href="#competencies">Expertise</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
+    <a href="#projects">Case Studies</a>
+    <a href="#skills">Tools</a>
     <a href="#contact" class="nav-cta">Get in touch</a>
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -300,22 +323,21 @@
 <header class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <span class="eyebrow reveal">Senior Scrum Master<b>·</b> Agile Delivery Lead</span>
+      <span class="eyebrow reveal">Enterprise Agile Delivery · 6+ Teams · SAFe 6.0</span>
       <h1 class="hero-name reveal d1">Raveendra<br>Padmaraju</h1>
-      <p class="hero-role reveal d2">Enterprise Agile Delivery · Technical Delivery</p>
-      <p class="lead reveal d3">18+ years in enterprise IT and 8+ years in Agile delivery leadership across manufacturing, healthcare, and regulated environments. I help teams deliver complex work with clear priorities, better coordination, and fewer delivery obstacles.
-         <br><strong>Selected results:</strong>
-           <br>. 25% faster time to market.
-           <br>. 30% higher delivery throughput.
-           <br>. 25% fewer production defects.
-           <!--<br>. Reduced production defects by <strong>25%</strong> through earlier testing and clearer quality practices. -->
-           <!--<br>. Reduced planning conflicts by <strong>20%</strong> through better alignment across Product, Engineering, and Architecture teams. -->
+      <p class="hero-role reveal d2">Senior Agile Delivery Lead — <b>Cloud, DevOps &amp; Platform Engineering Teams</b></p>
+      <p class="lead reveal d3">18+ years in enterprise IT, 8+ in Agile delivery leadership. I lead multi-team Agile delivery for cloud, platform, and enterprise applications — turning cross-team dependencies and risks into predictable, on-time releases across manufacturing, healthcare, and regulated environments.
       </p>
+      <ul class="hero-results reveal d3">
+        <li><strong>25% faster time to market</strong> through structured dependency management and PI planning optimization across 6 teams (Outokumpu, 2023–Present)</li>
+        <li><strong>30% higher delivery throughput</strong> via capacity planning improvements and impediment removal</li>
+        <li><strong>25% fewer production defects</strong> through earlier testing integration and strengthened Definition of Done</li>
+      </ul>
       <div class="hero-cta reveal d4">
         <a href="#contact" class="btn btn-primary">Let's connect
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a href="#experience" class="btn btn-ghost">View experience</a>
+        <a href="#projects" class="btn btn-ghost">See delivery results</a>
       </div>
       <div class="hero-contact reveal d5">
         <a href="mailto:raveendra.padmaraju@gmail.com">
@@ -324,11 +346,11 @@
         </a>
         <a href="tel:+358504658176">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2H7a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L7.9 9.9a16 16 0 0 0 6 6l1.5-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6A2 2 0 0 1 22 16.9z"/></svg>
-          +358 504658176
+          +358 50 465 8176
         </a>
         <span style="display:inline-flex;align-items:center;gap:8px">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Espoo, Finland  · Open to Remote (EOR)
+          Espoo, Finland · Open to remote and relocation across the Nordics and EU
         </span>
       </div>
     </div>
@@ -340,30 +362,31 @@
       </div>
       <div class="float-badge fb-1">
         <div class="fb-num">8+</div>
-        <div class="fb-lbl">Years in<br>Agile delivery</div>
+        <div class="fb-lbl">Years in<br>Agile Delivery</div>
       </div>
       <div class="float-badge fb-2">
         <div class="fb-num">CSM</div>
-        <div class="fb-lbl">Scrum Alliance</div>
+        <div class="fb-lbl">Certified ScrumMaster<br>Scrum Alliance</div>
       </div>
       <div class="float-badge fb-4">
         <div class="fb-num">SAFe 6.0</div>
-        <div class="fb-lbl">Scaled Agile</div>
+        <div class="fb-lbl">Agilist<br>Scaled Agile, Inc.</div>
       </div>
       <div class="float-badge fb-3">
-        <div class="fb-num">30%</div>
-        <div class="fb-lbl">Higher throughput</div>
+        <div class="fb-num">6+</div>
+        <div class="fb-lbl">Simultaneous<br>Teams</div>
       </div>
   </div>
+</div>
 </header>
 
 <!-- STATS -->
 <section class="stats">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><div class="num" data-count="18" data-suffix="+">0</div><div class="lbl">Years in IT</div></div>
-    <div class="stat reveal d1"><div class="num" data-count="8" data-suffix="+">0</div><div class="lbl">Years in Agile Delivery</div></div>
-    <div class="stat reveal d2"><div class="num" data-count="6" data-suffix="+">0</div><div class="lbl">Scrum/Kanban Teams</div></div>
-    <div class="stat reveal d3"><div class="num" data-count="30" data-suffix="%">0</div><div class="lbl">Higher Throughput</div></div>
+    <div class="stat reveal"><div class="num" data-count="18" data-suffix="+">0</div><div class="lbl">Years Enterprise IT</div></div>
+    <div class="stat reveal d1"><div class="num" data-count="6" data-suffix="+">0</div><div class="lbl">Simultaneous Teams</div></div>
+    <div class="stat reveal d2"><div class="num" data-count="3" data-suffix="">0</div><div class="lbl">Industry Verticals</div></div>
+    <div class="stat reveal d3"><div class="num" data-count="25" data-suffix="%">0</div><div class="lbl">Faster Time to Market</div></div>
   </div>
 </section>
 
@@ -372,14 +395,16 @@
   <div class="wrap about-grid">
     <div class="reveal">
       <span class="eyebrow">Profile</span>
-      <h2 style="font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:22px">Helping distributed teams deliver complex work with clarity and predictability.</h2>
-      <p><strong>Senior Scrum Master and Agile Delivery Lead with 18+ years of enterprise IT experience and 8+ years in Agile delivery</strong></p>
-      <p>I work with Product, Engineering, QA, Platform, and business teams to improve delivery flow, manage risks and dependencies, and support planning through release</p>
-      <br><strong>Selected results:</strong>
-           <br>. 25% faster time to market.
-           <br>. 30% higher delivery throughput.
-           <br>. 25% fewer production defects.
-           <br>. 20% fewer planning conflicts.
+      <h2 style="font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:22px">Leading multi-team Agile delivery for cloud, platform, and enterprise applications — from PI planning to release readiness.</h2>
+      <p>Senior Agile Delivery Lead with 18+ years in enterprise IT and 8+ in Agile delivery leadership. I coordinate delivery across 6+ Scrum and Kanban teams for cloud platform migrations, enterprise application rollouts, and regulated healthcare infrastructure — managing dependencies, risks, and release readiness across Product, Engineering, QA, and Platform teams.</p>
+      <p>My approach is grounded in structured dependency mapping, capacity-based forecasting, and release governance. I facilitate PI Planning, Scrum of Scrums, and cross-team retrospectives to surface blockers early, align priorities between business and engineering, and keep commitments realistic and measurable.</p>
+      <p><strong>Results across roles:</strong></p>
+      <ul class="about-results">
+        <li><strong>25% faster time to market</strong> at Outokumpu — through cross-team dependency management and PI planning optimization across 6 teams</li>
+        <li><strong>30% higher delivery throughput</strong> — via capacity planning improvements and systematic impediment removal</li>
+        <li><strong>25% fewer production defects</strong> — through earlier testing integration and strengthened Definition of Done</li>
+        <li><strong>10% faster environment provisioning</strong> at ABB and Philips — through retrospective-driven process improvements and automation coordination</li>
+      </ul>
     </div>
     <aside class="glance reveal d2">
       <h4>At a glance</h4>
@@ -389,27 +414,23 @@
       </div>
       <div class="glance-item">
         <div class="gi-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div><div class="gi-k">Target roles</div><div class="gi-v">Senior Scrum Master · Technical Scrum Master · Agile Delivery Lead</div></div>
-      </div>      
+        <div><div class="gi-k">Target Roles</div><div class="gi-v">Senior Scrum Master · Agile Delivery Lead · Technical Delivery Lead (Cloud &amp; Platform)</div></div>
+      </div>
       <div class="glance-item">
-        <div class="gi-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></div>
-        <div><div class="gi-k">What I Do</div><div class="gi-v">Help teams plan, coordinate, and deliver complex enterprise technology work</div></div>
+        <div class="gi-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div><div class="gi-k">What I Do</div><div class="gi-v">Lead multi-team Agile delivery for cloud platform migrations, enterprise applications (SAP CRM, Sitecore), and regulated infrastructure</div></div>
       </div>
-        <div class="glance-item">
-        <div class="gi-ico"> <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg></div>
-        <div><div class="gi-k">Core Focus</div><div class="gi-v">Agile Delivery Leadership · Dependency and Risk Management · Capacity Planning · Release Readiness</div></div>
+      <div class="glance-item">
+        <div class="gi-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg></div>
+        <div><div class="gi-k">Core Focus</div><div class="gi-v">Agile Delivery Leadership · Dependency &amp; Risk Management · Capacity Planning · Release Readiness · Stakeholder Alignment</div></div>
       </div>
-      <!--<div class="glance-item">
+      <div class="glance-item">
         <div class="gi-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg></div>
-        <div><div class="gi-k">Engineering Context</div><div class="gi-v">Cloud & Platform · DevOps · Infrastructure · Manufacturing · Regulated Healthcare</div></div>
-      </div> -->
-      <!--<div class="glance-item">
-        <div class="gi-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg></div>
-        <div><div class="gi-k">Collaboration Scope</div><div class="gi-v">Product · Engineering · Architecture · QA · Platform · Business</div></div>
-      </div> -->
+        <div><div class="gi-k">Technical Context</div><div class="gi-v">Cloud &amp; Platform Delivery · DevOps · CI/CD · Infrastructure Modernization · SAP CRM · Sitecore</div></div>
+      </div>
       <div class="glance-item">
         <div class="gi-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.8 7 22l5-3 5 3-2-8.2"/></svg></div>
-        <div><div class="gi-k">Scale and Certifications</div><div class="gi-v">Six Scrum and Kanban teams · 18+ years in IT · CSM · SAFe 6 Agilist</div></div>
+        <div><div class="gi-k">Scale &amp; Certifications</div><div class="gi-v">6+ concurrent Scrum/Kanban teams · CSM (Scrum Alliance) · SAFe 6.0 Agilist (Scaled Agile, Inc.)</div></div>
       </div>
     </aside>
   </div>
@@ -420,56 +441,46 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Core Competencies</span>
-      <h2>Where I create impact</h2>
-      <p>I help Product and Engineering teams keep complex, multi-team delivery on track by managing priorities, dependencies, risks, and release readiness.</p>
+      <h2>Where I Create Impact</h2>
+      <p>Multi-team Agile delivery for cloud, platform, and enterprise applications — managing dependencies, capacity, risks, and release readiness across 6+ teams and 3 industry verticals.</p>
     </div>
     <div class="comp-grid">
       <div class="comp-card reveal">
         <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 3-4 3 2 4-6"/></svg></div>
         <h3>Agile Delivery &amp; Engineering Execution</h3>
-        <p>Leading 6+ Scrum/Kanban teams and keeping delivery on track from planning to release.</p>
+        <p>Leading 6+ Scrum and Kanban teams through PI planning, sprint execution, and release coordination — improving time to market by 25%.</p>
       </div>
       <div class="comp-card reveal d1">
         <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.2-8.5"/><path d="M21 3v6h-6"/></svg></div>
         <h3>Product–Engineering Alignment</h3>
-        <p>Working with Product, Engineering, Architecture, QA, Platform, and business teams to align priorities and keep delivery on track.</p>
+        <p>Aligning Product, Engineering, Architecture, QA, and Platform teams on shared priorities — reducing planning conflicts by 20% through structured cross-team dependency mapping.</p>
       </div>
       <div class="comp-card reveal d2">
         <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/></svg></div>
         <h3>Dependency, Risk &amp; Impediment Management</h3>
-        <p>Identifying dependencies, risks, and blockers early and working with the right teams to resolve them.</p>
+        <p>Identifying cross-team dependencies and risks early through dependency mapping and risk registers — resolving blockers within sprint cycles across 6+ teams.</p>
       </div>
       <div class="comp-card reveal">
         <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 6.1H3M21 12.1H3M15.1 18H3"/></svg></div>
         <h3>Capacity Planning &amp; Delivery Forecasting</h3>
-        <p>Using team capacity and delivery trends to plan realistic commitments and forecasts.</p>
+        <p>Using capacity analysis, velocity trends, and throughput metrics in Jira and Azure DevOps to set realistic sprint commitments and PI forecasts across 6+ teams.</p>
       </div>
       <div class="comp-card reveal d1">
         <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
         <h3>Release Readiness &amp; Delivery Governance</h3>
-        <p>Coordinating Engineering, QA, Platform, Security, and Operations to ensure release readiness.</p>
+        <p>Coordinating Engineering, QA, Platform, Security, and Operations for release readiness — reducing production defects by 25% through earlier testing and strengthened Definition of Done.</p>
       </div>
-      <!--<div class="comp-card reveal d2">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
-        <h3>Multi-Team Coordination &amp; Dependency Flow</h3>
-        <p>Coordinating across 6+ teams to manage dependencies and keep delivery on track</p>
-      </div>
-      <div class="comp-card reveal">
-        <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></div>
-        <h3>Scrum of Scrums &amp; Multi-Team Coordination</h3>
-        <p>Using Scrum of Scrums to align teams, manage dependencies, and keep delivery moving.</p>
-      </div> -->
       <div class="comp-card reveal d1">
         <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 20v-6M6 20V10M18 20V4"/></svg></div>
         <h3>Agile Metrics &amp; Flow Management</h3>
-        <p>Tracking velocity, cycle time, throughput, and sprint health to spot delivery issues early.</p>
+        <p>Building and tracking velocity, cycle time, throughput, and sprint health dashboards to identify delivery risks early — enabling proactive intervention before commitments slip.</p>
       </div>
       <div class="comp-card reveal d2">
         <div class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 12a9 9 0 0 0-9-9 9 9 0 0 0-6.4 2.6L3 8"/><path d="M3 3v5h5M3 12a9 9 0 0 0 9 9 9 9 0 0 0 6.4-2.6L21 16"/><path d="M21 21v-5h-5"/></svg></div>
-        <h3>Agile Governance & Scaled Delivery</h3>
-        <p>Using Scrum, Kanban, and SAFe to support consistent delivery across enterprise teams.</p>
+        <h3>Agile Governance &amp; Scaled Delivery</h3>
+        <p>Applying Scrum, Kanban, and SAFe 6.0 across 6+ enterprise teams — facilitating PI Planning, Scrum of Scrums, System Demos, and Inspect &amp; Adapt workshops for consistent delivery governance.</p>
       </div>
-    </dev>
+    </div>
   </div>
 </section>
 
@@ -477,9 +488,9 @@
 <section class="section-pad" id="skills">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Skills &amp; Toolkit</span>
-      <h2>Frameworks, tools &amp; Delivery Practices</h2>
-      <p>The methods, tools, and engineering environments I use to keep delivery clear, coordinated, and moving.</p>
+      <span class="eyebrow">Tools &amp; Frameworks</span>
+      <h2>Frameworks, Tools &amp; Delivery Practices</h2>
+      <p>The frameworks, tools, and engineering environments I work with across cloud, platform, and enterprise application delivery.</p>
     </div>
 
     <div class="skills-grid">
@@ -491,19 +502,17 @@
           </svg>
           <div class="center"><span class="center"><strong>Agile Delivery</strong></span></div>
         </div>
-        <!--<h3>Agile Delivery</h3>   -->  
-        <p class="tags">Scrum · Kanban · SAFe · PI Planning · Agile Coaching</p>
+        <p class="tags">Scrum · Kanban · SAFe 6.0 · PI Planning · Scrum of Scrums · Retrospective Facilitation</p>
       </div>
       <div class="donut-card reveal d1">
         <div class="donut">
           <svg width="160" height="160" viewBox="0 0 160 160">
             <circle class="ring-bg" cx="80" cy="80" r="64"/>
             <circle class="ring-fg" cx="80" cy="80" r="64" stroke="var(--teal)" data-pct="100" stroke-dasharray="402" stroke-dashoffset="402"/>
-          </svg>       
-          <div class="center"><span class="center"><strong>Delivery <br>Management</strong></span></div>
+          </svg>
+          <div class="center"><span class="center"><strong>Delivery<br>Management</strong></span></div>
         </div>
-        <!--<h3>Delivery Management</h3>-->
-        <p class="tags">Planning · Risks · Dependencies · Release Readiness · Stakeholder Management · Team Collaboration</p>
+        <p class="tags">Capacity Planning · Risk Management · Dependency Mapping · Release Governance · Stakeholder Alignment · Cross-Team Coordination</p>
       </div>
 
       <div class="donut-card reveal d2">
@@ -512,23 +521,22 @@
             <circle class="ring-bg" cx="80" cy="80" r="64"/>
             <circle class="ring-fg" cx="80" cy="80" r="64" stroke="var(--gold)" data-pct="100" stroke-dasharray="402" stroke-dashoffset="402"/>
           </svg>
-          <div class="center"><span class="center"><strong>Technical <br>Delivery</strong></span></div>
+          <div class="center"><span class="center"><strong>Technical<br>Delivery</strong></span></div>
         </div>
-        <!--<h3>Team & Stakeholder Leadership</h3>-->
-        <p class="tags">Jira · Azure DevOps · CI/CD · Cloud & Platform Delivery · Technical Coordination</p>
-      </div>    
+        <p class="tags">Jira · Azure DevOps · CI/CD · Cloud &amp; Platform Delivery · SAP CRM · Sitecore · Infrastructure Modernization · Environment Provisioning</p>
+      </div>
     </div>
 
     <div class="bars reveal d1">
-      <div>       
-        <div class="bar-row"><div class="bt"><span><strong>Multi-Team Delivery</strong> — 6+ Scrum/Kanban teams</span><span></span></div><div class="bar-track" ><div class="bar-fill"data-w="100" ></div></div></div>
-        <div class="bar-row"><div class="bt"><span><strong>Risk & Dependencies</strong> — Risks · Blockers</span><span></span></div><div class="bar-track" ><div class="bar-fill" data-w="100"></div></div></div>
-        <div class="bar-row"><div class="bt"><span><strong>Delivery Planning</strong> — Capacity · Sprint · PI Planning</span><span></span></div><div class="bar-track" ><div class="bar-fill" data-w="100"></div></div></div>
+      <div>
+        <div class="bar-row"><div class="bt"><span><strong>Multi-Team Delivery</strong> — 6+ Scrum/Kanban teams, SAFe 6.0</span><span>Expert</span></div><div class="bar-track"><div class="bar-fill" data-w="95"></div></div></div>
+        <div class="bar-row"><div class="bt"><span><strong>Dependency &amp; Risk Management</strong> — Mapping · Registers · Blockers</span><span>Expert</span></div><div class="bar-track"><div class="bar-fill" data-w="93"></div></div></div>
+        <div class="bar-row"><div class="bt"><span><strong>Delivery Planning</strong> — Capacity · Sprint · PI Planning</span><span>Advanced</span></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
       </div>
       <div>
-        <div class="bar-row"><div class="bt"><span><strong>Product–Engineering Alignment</strong>— Product · Engineering · Architecture · QA</span><span></span></div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div></div>
-        <div class="bar-row"><div class="bt"><span><strong>Release Readiness</strong> — Engineering · QA · Platform · Operations</span><span></span></div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div></div>
-        <div class="bar-row"><div class="bt"><span><strong>Agile Metrics</strong> — Velocity · Cycle Time · Throughput</span><span></span></div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div></div>
+        <div class="bar-row"><div class="bt"><span><strong>Product–Engineering Alignment</strong></span><span>Advanced</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+        <div class="bar-row"><div class="bt"><span><strong>Release Readiness</strong> — Go/No-Go · DoD · Testing</span><span>Advanced</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
+        <div class="bar-row"><div class="bt"><span><strong>Agile Metrics &amp; Dashboards</strong> — Velocity · Cycle Time · Throughput</span><span>Advanced</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
       </div>
     </div>
   </div>
@@ -540,7 +548,7 @@
     <div class="sec-head reveal">
       <span class="eyebrow">Career Journey</span>
       <h2>Professional Experience</h2>
-      <p>Agile delivery leadership across enterprise, cloud, platform, manufacturing, and regulated healthcare environments</p>
+      <p>Agile delivery leadership across enterprise, cloud, platform, manufacturing, and regulated healthcare environments.</p>
     </div>
     <div class="timeline">
       <div class="tl-item reveal">
@@ -549,24 +557,24 @@
         <h3>Agile Delivery Lead | Scrum Master | SAFe Practitioner</h3>
         <div class="tl-co">Outokumpu Oy, via Wipro · Helsinki</div>
         <ul class="tl-list">
-          <li>Lead delivery across six Scrum and Kanban teams supporting enterprise cloud and platform initiatives.</li>
-          <li>Coordinate planning, capacity, dependencies, risks, impediments, and release readiness across teams.</li>
-          <li>Work with Product Owners, Engineering, QA, Platform, and business stakeholders to keep priorities and delivery aligned.</li>
-          <li>Reduced time to market by 25%.</li>
-          <li>Increased delivery throughput by 30%.</li>
+          <li>Lead Agile delivery for 6 Scrum and Kanban teams supporting enterprise cloud and platform migration initiatives at Outokumpu, a global stainless steel manufacturer.</li>
+          <li>Facilitate PI Planning, manage cross-team dependencies and risks, and coordinate release readiness across Product, Engineering, QA, and Platform teams.</li>
+          <li>Reduced time to market by 25% through structured dependency management and PI planning optimization across 6 teams.</li>
+          <li>Increased delivery throughput by 30% through capacity planning improvements and systematic impediment removal.</li>
+          <li>Strengthened release governance with go/no-go gates and Definition of Done enforcement, reducing production defects by 25%.</li>
         </ul>
       </div>
       <div class="tl-item reveal d1">
         <div class="tl-dot"></div>
         <span class="tl-date">Mar 2018 — Feb 2023</span>
-        <h3>Scrum Master | Agile Delivery Lead — Cloud, DevOps & Infrastructure</h3>
+        <h3>Scrum Master | Agile Delivery Lead — Cloud, DevOps &amp; Infrastructure</h3>
         <div class="tl-co">ABB Oy, via Wipro · Helsinki</div>
         <ul class="tl-list">
-          <li>Led Agile delivery across cloud platform, DevOps, and infrastructure initiatives.</li>
-          <li>Worked with Product Owners and engineering teams to turn technical requirements into prioritized work and achievable sprint goals.</li>
-          <li>Reduced environment provisioning cycles by 10% through improved coordination and automation</li>
-          <li>Supported CI/CD automation, environment provisioning, and infrastructure modernization with cross-functional engineering teams.</li>
-          <li>Strengthened delivery quality through Definition of Done, automated testing, and continuous feedback.</li>
+          <li>Led Agile delivery for cloud platform, DevOps, and infrastructure teams at ABB, a global leader in electrification and automation.</li>
+          <li>Partnered with Product Owners to translate technical requirements into prioritized backlogs and achievable sprint goals.</li>
+          <li>Reduced environment provisioning cycles by 10% through cross-team coordination and CI/CD pipeline automation support.</li>
+          <li>Drove infrastructure modernization initiatives — supported CI/CD automation, environment provisioning, and deployment pipeline improvements with cross-functional engineering teams.</li>
+          <li>Strengthened delivery quality through Definition of Done enforcement, automated testing integration, and continuous feedback loops.</li>
         </ul>
       </div>
       <div class="tl-item reveal d2">
@@ -575,28 +583,29 @@
         <h3>Delivery Lead</h3>
         <div class="tl-co">Philips Healthcare, via Wipro · Eindhoven, Netherlands</div>
         <ul class="tl-list">
-          <li>Supported Agile delivery for cloud and infrastructure services in a regulated healthcare environment.</li>
-          <li>Worked between platform engineering teams and business stakeholders to coordinate delivery and resolve issues.</li>
-          <li>Reduced environment provisioning time by 10% through improvements identified in retrospectives and automation.</li>
-          <li>Supported quality, governance, and audit requirements through delivery and QA reviews.</li>
+          <li>Led Agile delivery for cloud and infrastructure services in a regulated healthcare environment at Philips Healthcare.</li>
+          <li>Facilitated coordination between platform engineering teams and business stakeholders — resolving delivery blockers and aligning priorities.</li>
+          <li>Reduced environment provisioning time by 10% through retrospective-driven process improvements and automation initiatives.</li>
+          <li>Ensured compliance with quality, governance, and audit requirements through structured delivery and QA reviews.</li>
         </ul>
       </div>
-         <div class="tl-item reveal d2">
+      <div class="tl-item reveal d2">
         <div class="tl-dot"></div>
-        <span class="tl-date">Sep 2010 — July 2013</span>
+        <span class="tl-date">Sep 2010 — Jul 2013</span>
         <h3>Technical Lead</h3>
         <div class="tl-co">Brillio · Bengaluru, India</div>
         <ul class="tl-list">
-          <li>Coordinated enterprise application delivery, risks, and dependencies.</li>          
+          <li>Led technical delivery for enterprise application projects, coordinating risks, dependencies, and release planning across cross-functional teams.</li>
+          <li>Managed engineering coordination for enterprise application implementations, ensuring on-time delivery and alignment with business requirements.</li>
         </ul>
       </div>
-         <div class="tl-item reveal d2">
+      <div class="tl-item reveal d2">
         <div class="tl-dot"></div>
         <span class="tl-date">Jul 2008 — Aug 2010</span>
         <h3>System Analyst</h3>
         <div class="tl-co">iGATE Global Solutions · Bengaluru, India</div>
         <ul class="tl-list">
-          <li>Handled system analysis, requirements, testing, and implementation.</li>         
+          <li>Performed system analysis, requirements elicitation, and testing for enterprise application implementations.</li>
         </ul>
       </div>
     </div>
@@ -607,22 +616,30 @@
 <section class="section-pad" id="projects">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Key Projects</span>
-      <h2>Selected Delivery Projects</h2>
-      <p>Examples of Agile delivery, stakeholder coordination, dependency management, and release planning across enterprise platforms and business applications</p>
+      <span class="eyebrow">Case Studies</span>
+      <h2>Selected Delivery Case Studies</h2>
+      <p>Two delivery case studies from enterprise cloud platform and business application environments — showing how I managed dependencies, coordinated stakeholders, and drove release readiness.</p>
     </div>
     <div class="proj-grid">
       <div class="proj-card reveal">
-        <span class="proj-tag">Web Platform · Sitecore</span>
+        <span class="proj-tag">Web Platform · Sitecore CMS</span>
         <h3>Outokumpu.com Sitecore Migration</h3>
-        <p>Supported delivery coordination for the Sitecore migration, including planning, dependencies, testing, and release readiness.</p>
-        <div class="proj-chips"><span>Sitecore</span><span>Migration</span><span>Release Readiness</span></div>
+        <p>Led delivery coordination for the Sitecore CMS migration of outokumpu.com — a global corporate web platform for a stainless steel manufacturer. Managed planning, cross-team dependencies, testing coordination, and release readiness across multiple teams.</p>
+        <div class="proj-meta">
+          <span><strong>Role:</strong> Delivery Coordination Lead</span>
+          <span><strong>Teams:</strong> 6+ cross-functional</span>
+        </div>
+        <div class="proj-chips"><span>Sitecore</span><span>CMS Migration</span><span>Release Readiness</span><span>Multi-Team Coordination</span></div>
       </div>
       <div class="proj-card reveal d1">
         <span class="proj-tag">Enterprise Application · SAP CRM</span>
         <h3>SAP CRM Delivery</h3>
-        <p>Supported SAP CRM delivery across business and technical teams, with focus on planning, testing, dependencies, and stakeholder alignment.</p>
-        <div class="proj-chips"><span>SAP CRM</span><span>Enterprise Application</span><span>Stakeholder Management</span></div>
+        <p>Coordinated SAP CRM delivery across business and technical teams — managing sprint planning, testing coordination, cross-team dependencies, and stakeholder alignment for enterprise CRM application rollouts.</p>
+        <div class="proj-meta">
+          <span><strong>Role:</strong> Delivery &amp; Coordination Lead</span>
+          <span><strong>Environment:</strong> Enterprise Application</span>
+        </div>
+        <div class="proj-chips"><span>SAP CRM</span><span>Enterprise Application</span><span>Stakeholder Management</span><span>Release Coordination</span></div>
       </div>
     </div>
   </div>
@@ -633,27 +650,25 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Foundation</span>
-      <h2>Education &amp; Certification</h2>
+      <h2>Education &amp; Certifications</h2>
     </div>
     <div class="edu-grid">
       <div class="edu-col reveal">
         <h3 class="colh"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg>Education</h3>
-          <div class="edu-card">
-          <div><h4>Master of Computer Applications (MCA)- Bengaluru University, India</h4></div>
+        <div class="edu-card">
+          <div><h4>Master of Computer Applications (MCA)</h4><p>Bengaluru University, India</p></div>
         </div>
         <div class="edu-card">
-          <div><h4>BSc — Mathematics & Computer Science</h4><p>SV University, Tirupathi, India</p></div>
+          <div><h4>BSc — Mathematics &amp; Computer Science</h4><p>SV University, Tirupathi, India</p></div>
         </div>
       </div>
       <div class="edu-col reveal d1">
         <h3 class="colh"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.8 7 22l5-3 5 3-2-8.2"/></svg>Certifications</h3>
         <div class="edu-card cert-card">
-          <!--<div class="yr">CSM</div>-->
-          <div><h4>Certified ScrumMaster (CSM)</h4></div>
+          <div><h4>Certified ScrumMaster (CSM)</h4><p>Scrum Alliance</p></div>
         </div>
         <div class="edu-card cert-card">
-          <!--<div class="yr">SAFe</div>-->
-          <div><h4>SAFe 6.0 Agilist</h4></div>
+          <div><h4>SAFe 6.0 Agilist</h4><p>Scaled Agile, Inc.</p></div>
         </div>
       </div>
     </div>
@@ -663,18 +678,20 @@
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <span class="eyebrow">Get in touch</span>   
-    <p>Open to Senior Scrum Master, Technical Scrum Master, and Agile Delivery Lead opportunities across Finland, the Nordics, and Europe.</p>
+    <span class="eyebrow">Get in touch</span>
+    <h2>Let's deliver together</h2>
+    <p>Open to Senior Scrum Master, Agile Delivery Lead, and Technical Delivery Lead opportunities across Finland, the Nordics, and Europe. Available for permanent and contract roles.</p>
     <div class="contact-links">
       <a href="mailto:raveendra.padmaraju@gmail.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
         raveendra.padmaraju@gmail.com
       </a>
       <a href="https://www.linkedin.com/in/raveendrarp/" target="_blank" rel="noopener noreferrer" aria-label="View Raveendra Padmaraju on LinkedIn">
-    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
-      <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V8.99H7.1v11.46zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"/>
-    </svg>linkedin.com/in/raveendrarp
-  </a>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V8.99H7.1v11.46zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"/>
+        </svg>
+        linkedin.com/in/raveendrarp
+      </a>
       <a href="tel:+358504658176">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2H7a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L7.9 9.9a16 16 0 0 0 6 6l1.5-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6A2 2 0 0 1 22 16.9z"/></svg>
         +358 50 465 8176
@@ -684,7 +701,7 @@
 </section>
 
 <footer>
-  Designed with care · <b>Raveendra Padmaraju</b> — Technical Scrum Master · © <span id="yr"></span>
+  Designed with care · <b>Raveendra Padmaraju</b> — Senior Agile Delivery Lead · © <span id="yr"></span>
 </footer>
 
 <script>
@@ -732,7 +749,6 @@
   }, {threshold:.25});
 
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  // stat band + donuts may not be .reveal-wrapped for their counters, observe directly
   document.querySelectorAll('.stat, .donut-card').forEach(el => io.observe(el));
 </script>
 </body>
